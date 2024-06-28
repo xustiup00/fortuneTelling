@@ -1,0 +1,105 @@
+html {
+  background-image: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(56, 0, 39, 0.8), rgba(9, 1, 85, 0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: auto auto;
+  overflow: hidden;
+  font-family: "Yusei Magic", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  width: 100%;
+  margin: 8px;
+}
+
+html input, html select, html button {
+  opacity: 0.5;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name, #age, #gender, #gender>option {
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#name:focus, #age:focus, #gender:focus {
+  opacity: 1;
+  border: none;
+}
+
+/* ---------------------------------submit button-------------------------- */
+
+html button {
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+}
+
+html button:hover {
+  opacity: 100%;
+}
+
+#submit {
+  margin: 1.5vw;
+}
+
+/* ---------------------------------age input------------------------------ */
+
+select option::selection {
+  opacity: 100%;
+}
+
+/*--------------------------------- questions------------------------------- */
+
+#questions div input {
+  display: none;
+}
+
+.q label {
+  transition: transform 1.1s;
+}
+
+.q label:hover {
+  transform: scale(1.3);
+}
+
+.q input:checked ~ label{
+  color: white;
+}
+
+/*----------------------------------- answer----------------------------- */
+
+#answer {
+  display: flex;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  font-size: 2rem;
+}
+
+
+
